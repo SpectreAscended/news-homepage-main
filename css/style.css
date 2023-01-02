@@ -27,12 +27,31 @@ a {
   color: inherit;
 }
 
+ul {
+  list-style: none;
+}
+
 body {
   height: 100vh;
-  margin: 5rem 8rem;
+  margin: 5rem 10rem;
   font-size: 1.4rem;
   font-family: 'Inter', sans-serif;
-  line-height: 1.1;
+  line-height: 1.5;
+  color: var(--color-dark-grayish-blue);
+}
+
+/* Headings */
+
+.heading-primary {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-very-dark-blue);
+}
+
+.heading-secondary {
+  color: var(--color-soft-orange);
+  font-size: 2.6rem;
 }
 
 /* Nav bar */
@@ -59,4 +78,86 @@ body {
 .nav__link:hover,
 .nav__link:active {
   color: var(--color-soft-red);
+}
+
+/* Hero section */
+
+.section-hero {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.hero__img-container {
+  grid-column: 1 / span 2;
+}
+
+.hero__img {
+  width: 100%;
+  display: block;
+}
+
+.hero__heading {
+  grid-row: 2;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-items: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.hero__content p {
+  margin-bottom: 2rem;
+}
+
+.btn--read-more {
+  border: none;
+  background-color: var(--color-soft-red);
+  color: var(--color-off-white);
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.btn--read-more:hover,
+.btn--read-more:active {
+  background-color: var(--color-very-dark-blue);
+}
+
+/* Aside */
+
+.hero__aside {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+  background-color: var(--color-very-dark-blue);
+  color: var(--color-off-white);
+  padding: 2rem;
+}
+
+.hero__aside-list {
+  margin-top: 2.6rem;
+}
+
+.hero__aside-list--item h3 {
+  cursor: pointer;
+  transition: color 200ms ease;
+}
+
+.hero__aside-list--item h3:hover {
+  color: var(--color-soft-orange);
+}
+
+.hero__aside-list--item:not(:last-child) {
+  border-bottom: 1px solid var(--color-dark-grayish-blue);
+  margin-bottom: 2rem;
+}
+
+.hero__aside-list--item p {
+  color: var(--color-grayish-blue);
+  margin-block: 1.5rem;
 }
