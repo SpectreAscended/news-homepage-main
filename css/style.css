@@ -203,10 +203,23 @@ body {
 
 .trending__list--link:hover,
 .trending__list--link:active {
-  color: var(--color-soft-orange);
+  color: var(--color-soft-red);
 }
+
+/* Footer */
 
 .footer {
   text-align: center;
   padding-bottom: 1rem;
+}
+
+.attribution a:link,
+.attribution a:visited {
+  display: inline-block;
+  transition: color 200ms ease;
+}
+
+.attribution a:hover,
+.attribution a:active {
+  color: var(--color-soft-red);
 }
