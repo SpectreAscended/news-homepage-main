@@ -94,7 +94,7 @@ body {
 }
 
 .hero__img {
-  width: 100%;
+  max-width: 100%;
   display: block;
 }
 
@@ -161,4 +161,52 @@ body {
 .hero__aside-list--item p {
   color: var(--color-grayish-blue);
   margin-block: 1.5rem;
+}
+
+/* Section Trending */
+
+.trending__list {
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+.trending__list--item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 1.5rem;
+}
+
+.trending__list--image img {
+  max-width: 100%;
+  display: block;
+  height: 100%;
+}
+
+.trending__list--image {
+  grid-column: 1;
+  grid-row: 1 / span 3;
+}
+
+.trending__list--item span {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--color-grayish-blue);
+}
+
+.trending__list--link:link,
+.trending__list--link:visited {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-dark-grayish-blue);
+  transition: color 200ms ease;
+}
+
+.trending__list--link:hover,
+.trending__list--link:active {
+  color: var(--color-soft-orange);
+}
+
+.footer {
+  text-align: center;
+  padding-bottom: 1rem;
 }
