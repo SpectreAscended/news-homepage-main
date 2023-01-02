@@ -59,7 +59,7 @@ body {
 .nav {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .nav__list {
@@ -86,7 +86,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 
 .hero__img-container {
@@ -167,19 +167,21 @@ body {
 
 .trending__list {
   display: flex;
+  justify-content: space-between;
+  gap: 1rem;
   margin-bottom: 4rem;
 }
 
 .trending__list--item {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 10rem 2fr;
   column-gap: 1.5rem;
 }
 
 .trending__list--image img {
   max-width: 100%;
+  max-height: 100%;
   display: block;
-  height: 100%;
 }
 
 .trending__list--image {
